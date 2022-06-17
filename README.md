@@ -5,7 +5,7 @@ This website was built using [Wordpress](https://wordpress.org).
 
 ### Requirements
 * Running web server (eg. mamp, wamp, xammp, etc.)
-* Node package installed
+* Node package manager installed
 
 To run this code:
 
