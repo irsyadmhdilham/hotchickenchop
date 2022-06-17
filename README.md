@@ -1,2 +1,2 @@
 # Hot Chicken Chop
-## A restaurant website
+A restaurant website
