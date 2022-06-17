@@ -1,0 +1,24 @@
+@mixin media-screen($device: 'phone') {
+  $size: 0;
+
+  @if $device == 'phone' {
+    $size: 480px;
+  } @else if $device == 'tablet' {
+    $size: 1200px;
+  }
+
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@keyframes movedown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

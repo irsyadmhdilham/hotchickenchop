@@ -1,0 +1,76 @@
+#hcc-hubungi-kami {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 46%;
+    object-fit: cover;
+  }
+
+  #hcc-hubungi-kami-container {
+    margin: 80px 60px;
+
+    h1 {
+      margin: 0;
+      color: $primary;
+    }
+
+    p {
+      color: $secondary;
+    }
+
+    form {
+      margin-top: 30px;
+      display: grid;
+
+      .hcc-contact-field {
+        display: flex;
+        flex-direction: column;
+
+        + .hcc-contact-field {
+          margin-top: 30px;
+        }
+
+        label {
+          font-size: .9rem;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+
+        input, textarea {
+          border: solid 1px $primary;
+          padding: 12px 15px;
+          outline: none;
+          border-radius: 5px;
+          color: $secondary;
+
+          &:focus {
+            border-color: $turqoise;
+          }
+        }
+
+        small {
+          margin-top: 6px;
+          display: none;
+          color: $red;
+        }
+      }
+
+      button {
+        color: white;
+        background: $primary;
+        padding: 15px 40px;
+        font-size: .9rem;
+        transition: .3s;
+        border: none;
+        cursor: pointer;
+        justify-self: end;
+        margin-top: 40px;
+      
+        &:hover {
+          background: darken($primary, 15%);
+        }
+      }
+    }
+  }
+}

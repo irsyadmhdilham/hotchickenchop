@@ -1,0 +1,163 @@
+#hcc-footer {
+  background: $primary;
+
+  $footer-padding: 50px;
+
+  #hcc-footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    column-gap: 30px;
+    padding: $footer-padding $footer-padding 10px $footer-padding;
+
+    #hcc-footer-left-section {
+      svg {
+        width: 200px;
+        height: 87px;
+  
+        .hcc-logo-font {
+          fill: white;
+        }
+  
+        #hcc-logo-chicken {
+          fill: white;
+        }
+      }
+  
+      //lets eat
+      > p:nth-child(2) {
+        color: white;
+        margin: 0;
+      }
+  
+      #hcc-footer-operating-hours {
+        h3 {
+          color: white;
+          margin: 30px 0 15px 0;
+          font-size: 1rem;
+        }
+  
+        .hcc-footer-operating-hours-wrapper {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+  
+          p {
+            margin: 0;
+            color: white;
+            font-size: .9rem;
+          }
+        }
+      }
+    }
+  
+    #hcc-footer-middle-section {
+  
+      h3 {
+        color: white;
+        font-size: 1rem;
+      }
+  
+      #hcc-footer-contact-info-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 10px 10px;
+  
+        @mixin footer-contact($row, $col) {
+          color: white;
+          font-size: .9rem;
+          grid-column: #{$col};
+          grid-row: #{$row};
+          margin: -5px 0 0 0;
+        }
+  
+        @mixin footer-contact-icon($row, $col) {
+          grid-row: $row;
+          grid-column: $col;
+          width: 14px;
+        }
+  
+        #hcc-footer-contact-address-icon {
+          @include footer-contact-icon(1, 1);
+        }
+  
+        #hcc-footer-contact-address {
+          @include footer-contact(1, 2);
+        }
+  
+        #hcc-footer-contact-phone-icon {
+          @include footer-contact-icon(2, 1);
+        }
+  
+        #hcc-footer-contact-phone {
+          @include footer-contact(2, 2);
+        }
+      }
+  
+      #hcc-footer-social-links {
+        margin-top: 20px;
+  
+        svg {
+          width: 20px;
+  
+          &:nth-child(n+2) {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+
+    #hcc-footer-right-section {
+
+      #hcc-map {
+        width: 100%;
+        height: 300px;
+      }
+    }
+  }
+
+  #hcc-footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+
+    div {
+      height: 5px;
+      width: 5px;
+      background: white;
+      border-radius: 5px;
+      margin: 0 5px;
+    }
+
+    p {
+      margin: 0;
+      font-size: .8rem;
+      color: white;
+
+      a {
+        color: white;
+        text-decoration: none;
+        transition: .3s;
+
+        &:hover {
+          color: lighten(black, 60%);
+        }
+      }
+    }
+  }
+
+}
+
+@include media-screen('tablet') {
+  #hcc-footer {
+    #hcc-footer-wrapper {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 300px;
+
+      #hcc-footer-right-section {
+        grid-column: 1 / span 2;
+        margin-top: 40px;
+      }
+    }
+  }
+}

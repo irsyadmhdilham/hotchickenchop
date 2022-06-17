@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="30px" viewBox="0 0 41 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>open quote</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About" transform="translate(-720.000000, -627.000000)" fill="#DFDFDF">
+            <g id="quote" transform="translate(720.000000, 627.000000)">
+                <path d="M31,29.9073073 C25.7,29.9073073 21.8,26.0073073 21.8,20.0073073 C21.8,12.7073073 25.1,5.20730728 30.6,1.10730728 C34.3,-1.59269272 37.9,1.00730728 34.9,5.00730728 C33.1,7.30730728 32.3,9.60730728 31.9,11.9073073 C36.9,12.3073073 40.2,15.9073073 40.2,20.9073073 C40.2,26.1073073 36.5,29.9073073 31,29.9073073 Z M9.3,29.9073073 C3.9,29.9073073 0,26.0073073 0,20.0073073 C0,12.7073073 3.3,5.20730728 8.9,1.10730728 C12.6,-1.59269272 16.1,1.00730728 13.1,5.00730728 C11.4,7.30730728 10.5,9.60730728 10.2,11.9073073 C15.2,12.3073073 18.5,15.9073073 18.5,20.9073073 C18.5,26.1073073 14.8,29.9073073 9.3,29.9073073 Z" id="open-quote"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,35 @@
+$cust-img-size: 60px;
+
+.hcc-social-proof-wrapper {
+  display: grid;
+  grid-template-columns: $cust-img-size auto;
+  column-gap: 20px;
+  grid-template-rows: auto auto;
+  grid-template-areas: 'pic name' 'pic rating' 'pic comment';
+
+  //customer image
+  > img {
+    grid-area: pic;
+    width: $cust-img-size;
+    height: $cust-img-size;
+    border-radius: $cust-img-size;
+  }
+  
+  h4 {
+    grid-area: name;
+    margin: 0;
+    color: $primary;
+  }
+
+  .hcc-social-proof-star-wrapper {
+    grid-area: rating;
+    margin: 3px 0;
+  }
+
+  p {
+    grid-area: comment;
+    font-size: .8rem;
+    margin: 5px 0 0 0;
+    color: $secondary;
+  }
+}
