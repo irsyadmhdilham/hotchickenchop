@@ -6,7 +6,7 @@ This website was built using [Wordpress](https://wordpress.org).
 ### Requirements
 * Running local web server (eg. mamp, wamp, xammp, etc.)
 * Node package manager installed
-* Wordpress installed in any your fav local web server
+* Wordpress installed in any of your fav local web server
 
 Clone this project inside Wordpress themes folder
 
