@@ -150,13 +150,57 @@
 
 @include media-screen('tablet') {
   #hcc-footer {
+
+    $map-size: 300px;
+    $footer-padding: 30px;
+
     #hcc-footer-wrapper {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto 300px;
+      grid-template-rows: auto $map-size;
+      padding: $footer-padding $footer-padding 10px $footer-padding;
 
       #hcc-footer-right-section {
         grid-column: 1 / span 2;
         margin-top: 40px;
+
+        #hcc-map {
+          height: $map-size;
+        }
+      }
+    }
+
+    #hcc-footer-copyright {
+      margin-top: 40px;
+    }
+  }
+}
+
+@include media-screen('phone') {
+  #hcc-footer {
+
+    $footer-padding: 25px;
+    $map-size: 200px;
+
+    #hcc-footer-wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto $map-size;
+      padding: $footer-padding $footer-padding 10px $footer-padding;
+
+      #hcc-footer-right-section {
+        grid-column: 1;
+
+        #hcc-map {
+          height: $map-size;
+        }
+      }
+    }
+
+    #hcc-footer-copyright {
+      margin-top: 40px;
+      flex-direction: column;
+
+      div {
+        display: none;
       }
     }
   }

@@ -33,7 +33,7 @@
   </div>
 
   <div id="hcc-mobile-dropdown-menu-container">
-    <img src="<?php echo get_template_directory_uri() . '/src/img/close.svg' ?>" alt="close button">
+    <img id="hcc-close-menu-button" src="<?php echo get_template_directory_uri() . '/src/img/close.svg' ?>" alt="close button">
     <?php wp_nav_menu(array(
       'menu' => 'header-menu'
     )); ?>

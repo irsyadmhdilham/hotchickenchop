@@ -105,9 +105,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, .4);
     background: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 20px 6px 10px;
 
     #hcc-logo-container {
       svg {
@@ -117,6 +119,7 @@
     }
 
     #hcc-menu-hamburger {
+  
       div {
         height: 3px;
         width: 27px;
@@ -137,9 +140,9 @@
       left: 0;
       top: 0;
       z-index: 2;
-      display: flex;
       justify-content: center;
       align-items: center;
+      display: none;
 
       img {
         position: absolute;
@@ -175,10 +178,6 @@
         }
       }
     }
-
-    .dropdown-down {
-      animation: movedown .5s ease-out infinite forwards;
-    }
   }
 
   .hcc-nav-front-page-mobile {
@@ -205,6 +204,29 @@
 
     #hcc-menu-hamburger div {
       background: white !important;
+    }
+  }
+}
+
+@include media-screen('phone') {
+  #hcc-header-mobile {
+    #hcc-mobile-dropdown-menu-container {
+      img {
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+      }
+
+      .menu-main-container #menu-main-1 li {
+        a {
+          font-size: 1.7rem;
+        }
+
+        &:nth-child(n + 2) {
+          margin-top: 25px;
+        }
+      }
     }
   }
 }

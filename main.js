@@ -8,7 +8,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var isContactPage = window.location.pathname.match(/mengenai-kami/g);
+var isContactPage = window.location.pathname.match(/hubungi-kami/g);
 
 if (isContactPage) {
   var ContactForm = /*#__PURE__*/function () {
@@ -154,6 +154,65 @@ window.initMap = function initMap() {
   });
 };
 
+var DropdownAnimate = /*#__PURE__*/function () {
+  function DropdownAnimate(dropdown, mobileMenuButton, closeMenuButton) {
+    _classCallCheck(this, DropdownAnimate);
+
+    _defineProperty(this, "mobileMenuButton", void 0);
+
+    _defineProperty(this, "dropdown", void 0);
+
+    _defineProperty(this, "closeMenuButton", void 0);
+
+    this.dropdown = dropdown;
+    this.mobileMenuButton = mobileMenuButton;
+    this.closeMenuButton = closeMenuButton;
+    this.dropdown.style.transform = 'translateY(-100%)';
+    this.show();
+    this.hide();
+  }
+
+  _createClass(DropdownAnimate, [{
+    key: "show",
+    value: function show() {
+      var _this2 = this;
+
+      this.mobileMenuButton.addEventListener('click', function () {
+        document.body.style.overflowY = 'hidden';
+        _this2.dropdown.style.display = 'flex';
+
+        _this2.dropdown.classList.add('dropdown-show');
+      });
+    }
+  }, {
+    key: "hide",
+    value: function hide() {
+      var _this3 = this;
+
+      this.closeMenuButton.addEventListener('click', function () {
+        _this3.dropdown.classList.remove('dropdown-show');
+
+        _this3.dropdown.classList.add('dropdown-hide');
+
+        setTimeout(function () {
+          _this3.dropdown.removeAttribute('class');
+
+          var args = [_this3.dropdown, document.body];
+          args.map(function (el) {
+            el.removeAttribute('style');
+          });
+        }, 200);
+      });
+    }
+  }]);
+
+  return DropdownAnimate;
+}();
+
+var dropdown = document.getElementById('hcc-mobile-dropdown-menu-container');
+var mobileMenuButton = document.getElementById('hcc-menu-hamburger');
+var closeMenuButton = document.getElementById('hcc-close-menu-button');
+new DropdownAnimate(dropdown, mobileMenuButton, closeMenuButton);
 var swiperSocialProof = new Swiper('.swiper-social-proof', {
   pagination: {
     el: '.swiper-pagination'

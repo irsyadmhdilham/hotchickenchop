@@ -1,4 +1,5 @@
-const isContactPage = window.location.pathname.match(/mengenai-kami/g);
+const isContactPage = window.location.pathname.match(/hubungi-kami/g);
+
 if (isContactPage) {
   class ContactForm {
     name = document.getElementById('hcc-contact-nama');

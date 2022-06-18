@@ -74,3 +74,43 @@
     }
   }
 }
+
+@include media-screen('tablet') {
+  #hcc-hubungi-kami {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 350px;
+    }
+
+    #hcc-hubungi-kami-container {
+      margin: 50px;
+    }
+  }
+}
+
+@include media-screen('phone') {
+  #hcc-hubungi-kami {
+    img {
+      height: 200px;
+    }
+
+    #hcc-hubungi-kami-container {
+      margin: 35px;
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      form {
+
+        .hcc-contact-field {
+          label, input, textarea {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
