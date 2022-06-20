@@ -1,69 +1,45 @@
 #home-page {
   
   #hcc-hero-section {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('src/img/steak.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
   
-    #hcc-hero-content-wrapper {
-      margin-left: 100px;
-      width: 50%;
-  
-      h1 {
-        font-size: 2.6rem;
-        color: white;
-        margin: 0;
-        line-height: 1.5;
-  
-        span {
-          color: $primary;
+    #hcc-hero-content-container {
+      width: 45%;
+      margin-left: 50px;
+
+      #hcc-hero-content-wrapper {
+        border-left: 7px solid $gold;
+        padding-left: 20px;
+
+        h1 {
+          font-size: 4rem;
+          color: $secondary;
+          margin: 0;
+    
+          span {
+            color: $primary;
+          }
+        }
+    
+        p {
+          font-size: 1.2rem;
+          margin: 20px 0 0 0;
         }
       }
   
-      p {
-        color: white;
-        font-size: 1.2rem;
-      }
   
       #hcc-hero-cta-wrapper {
         margin-top: 50px;
+        margin-left: 27px;
       }
     }
-  
-    #hcc-hero-scroll {
-      position: absolute;
-      bottom: 30px;
-      width: 10%;
-      margin: 0 45%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-  
-      small {
-        color: white;
-      }
-  
-      @keyframes scroll-down {
-        
-        from {
-          transform: translateY(0);
-        }
-  
-        to {
-          transform: translateY(10px);
-        }
-      }
-  
-      img{
-        margin-top: 10px;
-        animation: scroll-down .45s ease-in-out infinite alternate;
-      }
+
+    img {
+      height: 100vh;
+      object-fit: cover;
+      width: 55%;
     }
   }
 
@@ -71,16 +47,20 @@
     padding: 0 50px;
     position: relative;
     z-index: 0;
+    background: $cream;
+    padding: 50px 0;
 
     h2 {
       font-weight: normal;
       color: $primary;
       text-align: center;
-      margin: 45px 0;
+      margin: 0;
+      font-size: 2rem;
     }
 
     .swiper-social-proof {
       height: 200px;
+      margin-top: 40px;
       overflow: hidden;
 
       .swiper-pagination {
@@ -106,148 +86,223 @@
     }
   }
 
-  #hcc-home-menu {
-    background: #F6F6F6;
-    padding: 120px 120px 80px 120px;
+  #hcc-best-selling {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 750px;
 
-    #hcc-home-menu-container {
-      background: white;
+    img {
+      width: 600px;
+      height: 600px;
+      object-fit: cover;
+    }
+    #hcc-best-selling-content {
+      background: $cream;
+      border-left: solid 10px $gold;
+      margin-left: -80px;
+      padding: 40px;
+      width: 400px;
 
-      #hcc-menu-best-selling-container {
-        display: flex;
-
-        > img {
-          object-fit: cover;
-          object-position: 50% 50%;
-          width: 50%;
-          height: 400px;
-        }
-
-        #hcc-menu-best-selling-content-wrapper {
-          width: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          #hcc-menu-best-selling-content {
-            width: 80%;
-
-            #hcc-menu-best-selling-heading-wrapper {
-              display: flex;
-              align-items: flex-end;
-
-              h4 {
-                color: $secondary;
-                margin: 0;
-              }
-
-              img {
-                width: 20px;
-                height: 20px;
-                margin-left: 7px;
-              }
-            }
-
-            h3 {
-              color: $primary;
-              font-size: 1.5rem;
-              margin: 15px 0 0 0;
-            }
-
-            p {
-              color: $secondary;
-            }
-
-            #hcc-menu-best-selling-social-proof {
-              margin-top: 50px;
-            }
-          }
-        }
+      h4 {
+        margin: 0;
+        font-size: 1.4rem;
+        color: $primary;
+        letter-spacing: .8px;
       }
 
-      #hcc-menu-new-menu-container {
+      h3 {
+        font-size: 3.1rem;
+        margin: 20px 0 0 0;
+      }
+
+      #best-selling-button {
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+  
+      #hcc-best-selling-rating {
         display: flex;
-
+        margin-top: 7px;
+  
         img {
-          object-fit: cover;
-          object-position: 50% 50%;
-          width: 50%;
-          height: 400px;
-          order: 1;
-        }
-
-        #hcc-menu-new-menu-content-wrapper {
-          width: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          order: 0;
-
-          #hcc-menu-new-menu-content {
-            width: 80%;
-
-            h4 {
-              color: $secondary;
-              margin: 0;
-            }
-
-            h3 {
-              color: $primary;
-              font-size: 1.5rem;
-              margin: 15px 0 0 0;
-            }
-
-            p {
-              color: $secondary;
-            }
+          width: 15px;
+          height: 15px;
+  
+          &:nth-child(n + 2) {
+            margin-left: 10px;
           }
         }
       }
     }
+  }
 
-    a {
-      margin-top: 50px;
+  #hcc-pizza {
+    overflow: hidden;
+    height: 709px;
+    margin-top: -40px;
+
+    #hcc-pizza-wrapper {
+      position: relative;
+      top: 315px;
+      background: $gold;
+      height: 500px;
+
+      #hcc-pizza-diagonal {
+        background: $gold;
+        height: 400px;
+        width: 105%;
+        position: absolute;
+        top: -100px;
+        transform: rotate(352deg);
+        z-index: 0;
+      }
+  
+      h2 {
+        font-size: 25rem;
+        letter-spacing: 20px;
+        margin: 0;
+        z-index: 1;
+        position: absolute;
+        top: -96px;
+        left: 58px;
+        transform: rotate(352deg);
+        color: #FFAE00;
+      }
+  
+      img {
+        position: absolute;
+        right: -142px;
+        top: -301px;
+        width: 750px;
+        z-index: 2;
+      }
+  
+      #hcc-pizza-text-wrapper {
+        position: relative;
+        z-index: 2;
+        width: 418px;
+        margin-left: 170px;
+  
+        h1 {
+          font-size: 8rem;
+          margin: 0;
+          letter-spacing: 3px;
+        }
+  
+        p {
+          font-size: 1.2rem;
+          margin: 10px 0;
+        }
+  
+        #hcc-pizza-button {
+          margin-top: 50px;
+  
+          a {
+            color: white;
+            text-decoration: none;
+            background: #FF731E;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            transition: .3s;
+            letter-spacing: 1px;
+          
+            &:hover {
+              background: darken(#FF731E, 15%);
+            }
+          }
+        }
+      }
     }
   }
 
   #hcc-customer-images {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-    #hcc-customer-image-title {
-      background: linear-gradient(rgba(255, 188, 30, .6), rgba(255, 188, 30, .6)), url('src/img/pelanggan_1.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
+    grid-template-columns: auto 55%;
+
+    #hcc-customer-images-text-container {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      grid-row: 1 / span 2;
 
-      h2 {
-        font-size: 1.7rem;
-        margin: 0;
-        color: white;
-      }
+      #hcc-images-text-wrapper {
+        #upper-line {
+          width: 150px;
+          height: 10px;
+          background: $gold;
+          margin-bottom: 20px;
+        }
 
-      p {
-        color: white;
+        h1 {
+          font-size: 7rem;
+          line-height: .9;
+          margin: 0;
+
+          span {
+            color: $primary;
+          }
+        }
+        
+        h2 {
+          font-size: 3.5rem;
+          line-height: 1;
+          text-transform: none;
+
+          span {
+            color: $primary;
+          }
+        }
       }
     }
 
-    #hcc-customer-image-container {
+    #hcc-customer-images-container {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 250px 250px 125px 250px;
 
-      .hcc-customer-image-wrapper {
-        
-        img {
-          object-fit: cover;
+      img {
+        object-fit: cover;
+
+        @mixin dimension {
           width: 100%;
           height: 100%;
+        }
+
+        &:first-child {
+          grid-column: 1 / span 2;
+          grid-row: 1;
+          @include dimension;
+        }
+
+        &:nth-child(2) {
+          grid-column: 3;
+          grid-row: 1 / span 3;
+          @include dimension;
+        }
+
+        &:nth-child(3) {
+          grid-column: 1;
+          grid-row: 2;
+          @include dimension;
+        }
+
+        &:nth-child(4) {
+          grid-column: 2;
+          grid-row: 2;
+          @include dimension;
+        }
+
+        &:nth-child(5) {
+          grid-column: 1 / span 2;
+          grid-row: 3 / span 2;
+          @include dimension;
+        }
+
+        &:nth-child(6) {
+          grid-column: 3;
+          grid-row: 4;
+          @include dimension;
+          background: pink;
         }
       }
     }

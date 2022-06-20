@@ -2,10 +2,8 @@
 
   <section id="hcc-footer-wrapper">
     <div id="hcc-footer-left-section">
-  
-      <?php include 'src/img/logo.svg'; ?>
-  
-      <p>Lets eat at Hot Chicken Chop</p>
+
+      <img src="<?php echo get_template_directory_uri() . '/src/img/logo.svg'; ?>" alt="logo">
   
       <div id="hcc-footer-operating-hours">
   
@@ -32,9 +30,13 @@
       <h3>Hubungi kami</h3>
   
       <div id="hcc-footer-contact-info-container">
-        <img id="hcc-footer-contact-address-icon" src="<?php echo get_template_directory_uri() . '/src/img/location.svg' ?>" alt="location">
+        <div id="hcc-footer-contact-address-icon">
+          <?php include 'src/img/location.svg'; ?>
+        </div>
         <p id="hcc-footer-contact-address">No 23,Jalan Ttc 26A,Taman Teknologi Cheng, 75260, Cheng, Melaka</p>
-        <img id="hcc-footer-contact-phone-icon" src="<?php echo get_template_directory_uri() . '/src/img/phone.svg' ?>" alt="phone">
+        <div id="hcc-footer-contact-phone-icon">
+          <?php include 'src/img/phone.svg'; ?>
+        </div>
         <p id="hcc-footer-contact-phone">014-2666241</p>
       </div>
   

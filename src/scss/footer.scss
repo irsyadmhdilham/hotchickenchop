@@ -1,5 +1,5 @@
 #hcc-footer {
-  background: $primary;
+  background: $cream;
 
   $footer-padding: 50px;
 
@@ -10,39 +10,23 @@
     padding: $footer-padding $footer-padding 10px $footer-padding;
 
     #hcc-footer-left-section {
-      svg {
-        width: 200px;
-        height: 87px;
-  
-        .hcc-logo-font {
-          fill: white;
-        }
-  
-        #hcc-logo-chicken {
-          fill: white;
-        }
-      }
-  
-      //lets eat
-      > p:nth-child(2) {
-        color: white;
-        margin: 0;
+      img {
+        width: 100px;
       }
   
       #hcc-footer-operating-hours {
         h3 {
-          color: white;
+          color: $primary;
           margin: 30px 0 15px 0;
-          font-size: 1rem;
+          font-size: 1.5rem;
         }
   
         .hcc-footer-operating-hours-wrapper {
           display: grid;
-          grid-template-columns: 2fr 1fr;
+          grid-template-columns: 130px auto;
   
           p {
             margin: 0;
-            color: white;
             font-size: .9rem;
           }
         }
@@ -52,8 +36,8 @@
     #hcc-footer-middle-section {
   
       h3 {
-        color: white;
-        font-size: 1rem;
+        color: $primary;
+        font-size: 1.5rem;
       }
   
       #hcc-footer-contact-info-container {
@@ -63,7 +47,6 @@
         gap: 10px 10px;
   
         @mixin footer-contact($row, $col) {
-          color: white;
           font-size: .9rem;
           grid-column: #{$col};
           grid-row: #{$row};
@@ -73,7 +56,7 @@
         @mixin footer-contact-icon($row, $col) {
           grid-row: $row;
           grid-column: $col;
-          width: 14px;
+          width: 17px;
         }
   
         #hcc-footer-contact-address-icon {
@@ -91,18 +74,39 @@
         #hcc-footer-contact-phone {
           @include footer-contact(2, 2);
         }
+
+        svg {
+          width: 17px;
+          height: 17px;
+        }
+        
+        .hcc-location, .hcc-phone {
+          fill: $primary;
+        }
       }
   
       #hcc-footer-social-links {
-        margin-top: 20px;
+        margin-top: 40px;
   
         svg {
           width: 20px;
+          height: 20px;
+          cursor: pointer;
   
           &:nth-child(n+2) {
             margin-left: 15px;
           }
+          
+          .hcc-fb, .hcc-ig, .hcc-location, .hcc-waze {
+            fill: $primary;
+            transition: fill .3s;
+          }
+
+          &:hover path {
+            fill: $turqoise;
+          }
         }
+
       }
     }
 
@@ -124,7 +128,7 @@
     div {
       height: 5px;
       width: 5px;
-      background: white;
+      background: $secondary;
       border-radius: 5px;
       margin: 0 5px;
     }
@@ -132,15 +136,17 @@
     p {
       margin: 0;
       font-size: .8rem;
-      color: white;
+      color: $secondary;
 
       a {
-        color: white;
+        color: $secondary;
         text-decoration: none;
         transition: .3s;
+        font-family: 'Roboto Slab', serif;
+        text-transform: none;
 
         &:hover {
-          color: lighten(black, 60%);
+          color: $primary;
         }
       }
     }

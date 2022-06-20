@@ -12,6 +12,7 @@
 
     h1 {
       margin: 0;
+      font-size: 2.5rem;
       color: $primary;
     }
 
@@ -32,9 +33,11 @@
         }
 
         label {
-          font-size: .9rem;
           margin-bottom: 10px;
-          font-weight: bold;
+          font-family: 'League Gothic', sans-serif;
+          text-transform: uppercase;
+          color: $secondary;
+          font-size: 1.3rem;
         }
 
         input, textarea {
@@ -60,15 +63,17 @@
         color: white;
         background: $primary;
         padding: 15px 40px;
-        font-size: .9rem;
         transition: .3s;
         border: none;
+        font-size: 1.1rem;
         cursor: pointer;
         justify-self: end;
         margin-top: 40px;
+        font-family: 'League Gothic', sans-serif;
+        text-transform: uppercase;
       
         &:hover {
-          background: darken($primary, 15%);
+          background: $turqoise;
         }
       }
     }

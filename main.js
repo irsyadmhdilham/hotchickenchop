@@ -45,7 +45,7 @@ if (isContactPage) {
     }, {
       key: "nameValidate",
       value: function nameValidate() {
-        if (this.name.val() == '') {
+        if (this.name.value == '') {
           this.cssBorderColorRed(this.name);
           this.cssDisplayBlock(this.nameBlankError);
           return false;
@@ -58,10 +58,10 @@ if (isContactPage) {
       value: function emailValidate() {
         var regex = /^[a-z0-9-_]+\@[a-z]+\.[a-z]{2,3}(\.[a-z]{2})?/;
 
-        if (this.email.val() == '' || this.email.val().match(regex) == null) {
+        if (this.email.value == '' || this.email.value.match(regex) == null) {
           this.cssBorderColorRed(this.email);
 
-          if (this.email.val() == '') {
+          if (this.email.value == '') {
             this.cssDisplayBlock(this.emailBlankError);
           } else {
             this.cssDisplayBlock(this.emailFormatError);
@@ -75,7 +75,7 @@ if (isContactPage) {
     }, {
       key: "messageValidate",
       value: function messageValidate() {
-        if (this.message.val() == '') {
+        if (this.message.value == '') {
           this.cssBorderColorRed(this.message);
           this.cssDisplayBlock(this.messageBlankError);
           return false;
@@ -93,7 +93,7 @@ if (isContactPage) {
       value: function keyPressEvent(arr) {
         var _this = this;
 
-        arr[0].keypress(function () {
+        arr[0].addEventListener('keypress', function () {
           arr.map(function (prop) {
             _this.removeAttrStyle(prop);
           });

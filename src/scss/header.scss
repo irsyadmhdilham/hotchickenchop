@@ -1,9 +1,9 @@
 #hcc-header {
   display: flex;
   align-items: center;
-  padding: 5px 50px;
-  background: white;
-  box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+  justify-content: space-between;
+  padding: 15px 50px;
+  background: $cream;
 
   #hcc-logo-container {
     cursor: pointer;
@@ -11,19 +11,10 @@
     svg {
       width: 90px;
       height: 40px;
-
-      .hcc-logo-font {
-        fill: black;
-      }
-
-      #hcc-logo-chicken {
-        fill: #ff3636;
-      }
     }
   }
 
   .menu-main-container {
-    margin-left: 40px;
 
     #menu-main {
       padding: 0;
@@ -32,63 +23,29 @@
       li {
         list-style: none;
 
-        a {
-          text-decoration: none;
-          font-size: .85rem;
-          font-weight: bold;
-          color: $secondary;
-          transition: .3s;
-
-          &:hover {
-            color: $primary;
-          }
-        }
-
-        .active {
+        &:hover a {
           color: $primary;
         }
 
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          color: $secondary;
+          transition: color .3s;
+          font-size: 1.2rem;
+          letter-spacing: .5px;
+        }
+
         &:nth-child(n+2) {
-          margin-left: 50px;
+          margin-left: 35px;
         }
       }
 
       .current-menu-item a {
-        color: $primary !important;
+        color: $primary;
       }
     }
   }
-}
-
-.hcc-nav-front-page {
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  background: none !important;
-  box-shadow: none !important;
-  padding: 15px 50px;
-
-  #hcc-logo-container {
-    cursor: pointer;
-
-    svg {
-
-      .hcc-logo-font {
-        fill: white !important;
-      }
-
-      #hcc-logo-chicken {
-        fill: white !important;
-      }
-    }
-  }
-
-  .menu-main-container #menu-main {
-    li a {
-      color: white !important;
-    }
-  }
-
 }
 
 #hcc-header-mobile {
@@ -177,33 +134,6 @@
           }
         }
       }
-    }
-  }
-
-  .hcc-nav-front-page-mobile {
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    background: none !important;
-    box-shadow: none !important;
-    width: 96%;
-  
-    #hcc-logo-container {
-      cursor: pointer;
-  
-      svg {
-        .hcc-logo-font {
-          fill: white;
-        }
-  
-        #hcc-logo-chicken {
-          fill: white;
-        }
-      }
-    }
-
-    #hcc-menu-hamburger div {
-      background: white !important;
     }
   }
 }

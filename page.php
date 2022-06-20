@@ -2,7 +2,7 @@
 
 <div id="hcc-mengenai-kami">
 
-  <img src="<?php echo get_template_directory_uri() . '/src/img/steak.jpg' ?>" alt="about">
+  <img src="<?php echo get_template_directory_uri() . '/src/img/restaurant_ariel.jpg' ?>" alt="about">
 
   <div id="hcc-mengenai-kami-content">
 

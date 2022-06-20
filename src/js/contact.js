@@ -22,7 +22,7 @@ if (isContactPage) {
     }
   
     nameValidate() {
-      if (this.name.val() == '') {
+      if (this.name.value == '') {
         this.cssBorderColorRed(this.name);
         this.cssDisplayBlock(this.nameBlankError);
         return false;
@@ -33,9 +33,9 @@ if (isContactPage) {
     emailValidate() {
       const regex = /^[a-z0-9-_]+\@[a-z]+\.[a-z]{2,3}(\.[a-z]{2})?/;
   
-      if (this.email.val() == '' || this.email.val().match(regex) == null) {
+      if (this.email.value == '' || this.email.value.match(regex) == null) {
         this.cssBorderColorRed(this.email);
-        if (this.email.val() == '') {
+        if (this.email.value == '') {
           this.cssDisplayBlock(this.emailBlankError);
         } else {
           this.cssDisplayBlock(this.emailFormatError);
@@ -46,7 +46,7 @@ if (isContactPage) {
     }
   
     messageValidate() {
-      if (this.message.val() == '') {
+      if (this.message.value == '') {
         this.cssBorderColorRed(this.message);
         this.cssDisplayBlock(this.messageBlankError);
         return false;
@@ -59,7 +59,7 @@ if (isContactPage) {
     }
   
     keyPressEvent(arr) {
-      arr[0].keypress(() => {
+      arr[0].addEventListener('keypress', () => {
         arr.map(prop => {
           this.removeAttrStyle(prop);
         });

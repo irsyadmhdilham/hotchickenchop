@@ -2,7 +2,7 @@
 
   <div id="hcc-hubungi-kami">
 
-    <img src="<?php echo get_template_directory_uri() . '/src/img/steak.jpg' ?>" alt="steak">
+    <img src="<?php echo get_template_directory_uri() . '/src/img/restaurant.jpg' ?>" alt="steak">
 
     <div id="hcc-hubungi-kami-container">
 

@@ -19,6 +19,8 @@ $cust-img-size: 60px;
     grid-area: name;
     margin: 0;
     color: $primary;
+    font-size: 1.3rem;
+    letter-spacing: .5px;
   }
 
   .hcc-social-proof-star-wrapper {
@@ -28,7 +30,7 @@ $cust-img-size: 60px;
 
   p {
     grid-area: comment;
-    font-size: .8rem;
+    font-size: .9rem;
     margin: 5px 0 0 0;
     color: $secondary;
   }
