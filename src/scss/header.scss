@@ -62,11 +62,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
-    background: white;
-    width: 100%;
+    background: $cream;
     box-sizing: border-box;
-    padding: 6px 20px 6px 10px;
+    padding: 15px 20px;
 
     #hcc-logo-container {
       svg {
@@ -90,7 +88,7 @@
     }
 
     #hcc-mobile-dropdown-menu-container {
-      background: white;
+      background: $cream;
       position: absolute;
       height: 100vh;
       width: 100vw;

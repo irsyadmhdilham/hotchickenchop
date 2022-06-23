@@ -42,37 +42,19 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-  font-family: 'League Gothic', sans-serif;
+  font-family: 'Bebas Neue', cursive;
   text-transform: uppercase;
 }
 
-h2 {
-  font-family: 'League Gothic', sans-serif;
-  text-transform: uppercase;
-}
-
-h3{
-  font-family: 'League Gothic', sans-serif;
-  text-transform: uppercase;
-}
-
-h4{
-  font-family: 'League Gothic', sans-serif;
-  text-transform: uppercase;
-}
-
-h5 {
-  font-family: 'League Gothic', sans-serif;
-  text-transform: uppercase;
-}
-
-h6 {
-  font-family: 'League Gothic', sans-serif;
-  text-transform: uppercase;
+@for $x from 2 through 6 {
+  h#{$x} {
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+  }
 }
 
 a {
-  font-family: 'League Gothic', sans-serif;
+  font-family: 'Bebas Neue', cursive;
   text-transform: uppercase;
 }
 

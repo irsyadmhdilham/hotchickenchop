@@ -34,7 +34,7 @@
 
         label {
           margin-bottom: 10px;
-          font-family: 'League Gothic', sans-serif;
+          font-family: 'Bebas Neue', cursive;
           text-transform: uppercase;
           color: $secondary;
           font-size: 1.3rem;
@@ -65,12 +65,13 @@
         padding: 15px 40px;
         transition: .3s;
         border: none;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         cursor: pointer;
         justify-self: end;
         margin-top: 40px;
-        font-family: 'League Gothic', sans-serif;
+        font-family: 'Bebas Neue', cursive;
         text-transform: uppercase;
+        letter-spacing: .5px;
       
         &:hover {
           background: $turqoise;

@@ -37,7 +37,7 @@
 
             <?php 
               get_template_part('template-parts/social-proof', 'social proof', array(
-                'img' => '/src/img/pelanggan_1.jpg',
+                'img' => '/src/img/smile_1.jpg',
                 'name' => 'Nurul Atikah',
                 'rating' => 5,
                 'comment' => 'Makan kat sini memang best. Chicken chop dia memang paling sedap. Datang sini wajib makan chicken chop.'
@@ -104,10 +104,11 @@
       <h2>Pizza</h2>
   
       <div id="hcc-pizza-text-wrapper">
+        <h3>Menu baru</h3>
   
         <h1>Pizza</h1>
     
-        <p>Jom try menu baru kami, pelbagai pizza kami ada seperti Margherita,  Beef Pepperoni dan sebagainya.</p>
+        <p>Pizza homemade dengan menggunakan bahan yang berkualiti. Doh yang lembut, sos homemade dan topping yang fresh.</p>
   
         <div id="hcc-pizza-button">
           <a href="<?php echo site_url('/menu'); ?>">Lihat Menu</a>
@@ -126,7 +127,7 @@
     <div id="hcc-customer-images-text-container">
       <div id="hcc-images-text-wrapper">
         <div id="upper-line"></div>
-        <h1>Mereka<br/>semua<br/><span>suka<br/>makanan<br/>kami</span></h1>
+        <h1 id="hcc-mereka-semua-suka">Mereka<br/>semua<br/><span>suka<br/>makanan<br/>kami</span></h1>
         <h2>Lets eat at<br/><span>Hot Chicken Chop</span></h2>
       </div>
     </div>
@@ -152,7 +153,7 @@
     <div class="swiper-wrapper">
     <?php for ($f = 0; $f < 4; $f++): ?>
       <div class="swiper-slide">
-        <!-- <img src="<?php //echo get_template_directory_uri() . '/src/img/pelanggan_1.jpg'; ?>" alt="customer image"> -->
+        <img src="<?php echo get_template_directory_uri() . '/src/img/smile_1.jpg'; ?>" alt="customer image">
       </div>
     <?php endfor; ?>
     </div>

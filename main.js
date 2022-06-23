@@ -252,3 +252,9 @@ var swiperCustomerImage = new Swiper('.swiper-customer-image', {
     loop: true
   }
 });
+var tabletSize = window.matchMedia('(max-width: 1024px)');
+
+if (tabletSize.matches) {
+  var merekaSuka = document.getElementById('hcc-mereka-semua-suka');
+  merekaSuka.innerHTML = 'Mereka semua <span>suka makanan kami</span>';
+}

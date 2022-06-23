@@ -1,0 +1,159 @@
+#hcc-menu {
+  margin: 40px 150px;
+
+  h1 {
+    color: $primary;
+    margin: 0;
+  }
+
+  @mixin menu-title($width) {
+    .upper-line {
+      height: 5px;
+      width: $width;
+      background: $primary;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: $secondary;
+      font-size: 1.7rem;
+      margin: 0;
+    }
+  }
+
+  #hcc-menu-terpadu {
+    margin-top: 30px;
+
+    .hcc-menu-title {
+      @include menu-title(55px);
+    }
+
+    #hcc-menu-terpadu-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 25px;
+      margin-top: 20px;
+
+      .hcc-menu-terpadu-wrapper {
+        background: $cream;
+
+        > img {
+          height: 160px;
+          width: 100%;
+          object-fit: cover;
+        }
+
+        .hcc-menu-terpadu-text-container {
+          padding: 23px;
+
+          h3:first-child {
+            margin: 0;
+            color: $primary;
+            font-size: 1.4rem;
+          }
+
+          .hcc-menu-terpadu-rating {
+            margin-top: 5px;
+
+            img {
+              width: 12px;
+              height: 12px;
+
+
+              &:nth-child(n + 2) {
+                margin-left: 2px;
+              }
+            }
+          }
+
+          p {
+            margin: 4px 0;
+            font-size: .9rem;
+          }
+
+          h3:last-child {
+            margin: 12px 0 0 0;
+            color: $primary;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  #hcc-menu-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    margin-top: 25px;
+
+    .hcc-menu-card {
+      padding: 30px;
+      box-sizing: border-box;
+      background: $cream;
+
+      ul {
+        padding: 0;
+
+        li {
+          list-style: none;
+
+          .hcc-menu-list-top-wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            h3 {
+              color: $primary;
+              margin: 0;
+              font-size: 1.2rem;
+            }
+          }
+
+          p {
+            margin: 0;
+            font-size: .9rem;
+          }
+
+          &:nth-child(n + 2) {
+            $margin: 20px;
+            margin-top: $margin;
+            padding-top: $margin;
+            border-top: solid $primary 1px;
+          }
+        }
+      }
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 450px;
+    }
+
+    #hcc-menu-left-container {
+      display: flex;
+      flex-direction: column;
+
+      .hcc-menu-title {
+        @include menu-title(40px);
+      }
+
+      img {
+        margin-top: 25px;
+      }
+    }
+
+    #hcc-menu-right-container {
+      display: flex;
+      flex-direction: column;
+
+      .hcc-menu-title {
+        @include menu-title(25px);
+      }
+
+      img {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

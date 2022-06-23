@@ -36,7 +36,6 @@ gulp.task('js', function() {
     pipe(babel({
       presets: ['@babel/env']
     }));
-    // pipe(browserify());
   if (prod) {
     pipes = pipes.pipe(uglify());
   }
