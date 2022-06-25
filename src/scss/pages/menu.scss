@@ -30,7 +30,7 @@
 
     #hcc-menu-terpadu-container {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       column-gap: 25px;
       margin-top: 20px;
 
@@ -83,7 +83,7 @@
 
   #hcc-menu-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 25px;
     margin-top: 25px;
 
@@ -153,6 +153,40 @@
 
       img {
         margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+@include media-screen('tablet') {
+  #hcc-menu {
+    margin: 40px;
+  }
+}
+
+@include media-screen('phone') {
+  #hcc-menu {
+    #hcc-menu-terpadu {
+      #hcc-menu-terpadu-container {
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+      }
+    }
+
+    #hcc-menu-wrapper {
+      grid-template-columns: 1fr;
+      row-gap: 25px;
+
+      #hcc-menu-left-container {
+        img {
+          order: 1;
+          margin-top: 0;
+        }
+
+        .hcc-menu-card {
+          order: 2;
+          margin-top: 25px;
+        }
       }
     }
   }

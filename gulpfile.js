@@ -5,7 +5,6 @@ const cleanCss = require('gulp-clean-css');
 const autoPrefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
-const browserify = require('gulp-browserify');
 const babel = require('gulp-babel');
 const prod = process.env.NODE_ENV == 'production';
 
