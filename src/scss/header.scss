@@ -9,8 +9,8 @@
     cursor: pointer;
 
     svg {
-      width: 90px;
-      height: 40px;
+      width: 150px;
+      height: 32px;
     }
   }
 
@@ -32,8 +32,9 @@
           font-weight: bold;
           color: $secondary;
           transition: color .3s;
-          font-size: 1.2rem;
+          font-size: .8rem;
           letter-spacing: .5px;
+          text-transform: uppercase;
         }
 
         &:nth-child(n+2) {

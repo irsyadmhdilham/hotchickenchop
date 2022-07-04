@@ -8,8 +8,8 @@
 
       <div id="hcc-hero-content-wrapper">
 
-        <h1>The best <span>Chicken Chop<br/></span>in <span>Melaka</span></h1>
-        <p>Cuba dulu baru tau, Rasa sekali pasti datang lagi</p>
+        <h1>Selera <span>anda</span> adalah <span>tanggungjawab kami</span></h1>
+        <p>Kami menyediakan makanan mengikut selera anda. Fully customizable menu</p>
 
       </div>
 
@@ -20,7 +20,7 @@
     </div>
     <!-- #hcc-hero-content-container -->
   
-    <img src="<?php echo get_template_directory_uri() . '/src/img/chicken_chop.jpeg' ?>" alt="chicken chop">
+    <img src="<?php echo get_template_directory_uri() . '/src/img/hero-image.jpg' ?>" alt="hero">
 
   </div>
   <!-- #hcc-hero-section -->
@@ -32,19 +32,28 @@
     <div class="swiper-social-proof">
       <div class="swiper-wrapper">
         
-        <?php for ($n = 0; $n < 10; $n++) : ?>
+        <?php
+          $reviews = array(
+            array('name' => 'Nurul Atikah', 'comment' => 'Makan kat sini memang best. Chicken chop dia memang paling sedap. Datang sini wajib makan chicken chop.'),
+            array('name' => 'Khairul Anuar', 'comment' => 'Makanan kat sini memang padu, portion pon banyak. Puas hati!!!'),
+            array('name' => 'Abdullah Basir', 'comment' => 'Tak tau nak cakap apa. Best giler food kat sini'),
+            array('name' => 'Hisham Hasril', 'comment' => 'Sangat recommend untuk makan kat sini')
+          );
+          foreach ($reviews as $key => $value) {
+        ?>
           <div class="hcc-social-proof-container swiper-slide">
 
-            <?php 
+            <?php
+              $key++;
               get_template_part('template-parts/social-proof', 'social proof', array(
-                'img' => '/src/img/smile_1.jpg',
-                'name' => 'Nurul Atikah',
+                'img' => "/src/img/smile_{$key}.jpg",
+                'name' => $value['name'],
                 'rating' => 5,
-                'comment' => 'Makan kat sini memang best. Chicken chop dia memang paling sedap. Datang sini wajib makan chicken chop.'
+                'comment' => $value['comment']
               )); ?>
 
           </div>
-        <?php endfor; ?>
+        <?php } ?>
         <!-- .hcc-social-proof-container swiper-slide -->
 
       </div>
@@ -128,7 +137,7 @@
       <div id="hcc-images-text-wrapper">
         <div id="upper-line"></div>
         <h1 id="hcc-mereka-semua-suka">Mereka<br/>semua<br/><span>suka<br/>makanan<br/>kami</span></h1>
-        <h2>Lets eat at<br/><span>Hot Chicken Chop</span></h2>
+        <h2>Lets eat at<br/><span>Here</span></h2>
       </div>
     </div>
     <!-- #hcc-customer-images-text-container -->

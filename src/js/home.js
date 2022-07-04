@@ -17,7 +17,7 @@ const swiperSocialProof = new Swiper('.swiper-social-proof', {
       spaceBetween: 70
     },
     1200: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 100
     }
   }

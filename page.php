@@ -8,7 +8,7 @@
 
     <h1>Mengenai kami</h1>
 
-    <p>Hot Chicken Chop sudah beroperasi sejak tahun 2015. Bermula dengan minat terhadap western food dan juga mempunyai pengalaman di dalam penyediaan makanan dan minuman western.</p>
+    <p>Gastro Republika sudah beroperasi sejak tahun 2015. Bermula dengan minat terhadap western food dan juga mempunyai pengalaman di dalam penyediaan makanan dan minuman western.</p>
 
     <p>Kami menyajikan makanan western yang berkualiti dan juga memastikan setiap makanan yang di sediakan masih panas dan segar.</p>
 
@@ -18,7 +18,7 @@
 
       <p>Terima kasih kerana percaya dan terus menyokong kami. Kami akan terus menyaji makanan western yang berkualiti dan rasa yang menggamit memori</p>
 
-      <h4>Hot Chicken Chop</h4>
+      <h4>Gastro Republika</h4>
 
       <img src="<?php echo get_template_directory_uri() . '/src/img/quote.svg' ?>" alt="quote">
 

@@ -12,7 +12,6 @@
 
     h1 {
       margin: 0;
-      font-size: 2.5rem;
       color: $primary;
     }
 
@@ -34,10 +33,8 @@
 
         label {
           margin-bottom: 10px;
-          font-family: 'Bebas Neue', cursive;
-          text-transform: uppercase;
+          font-family: 'Montserrat', sans-serif;
           color: $secondary;
-          font-size: 1.3rem;
         }
 
         input, textarea {
@@ -65,13 +62,12 @@
         padding: 15px 40px;
         transition: .3s;
         border: none;
-        font-size: 1.2rem;
+        font-size: .8rem;
         cursor: pointer;
         justify-self: end;
         margin-top: 40px;
-        font-family: 'Bebas Neue', cursive;
+        font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
-        letter-spacing: .5px;
       
         &:hover {
           background: $turqoise;

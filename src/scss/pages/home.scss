@@ -14,7 +14,7 @@
         padding-left: 20px;
 
         h1 {
-          font-size: 4rem;
+          font-size: 3rem;
           color: $secondary;
           margin: 0;
     
@@ -24,7 +24,6 @@
         }
     
         p {
-          font-size: 1.2rem;
           margin: 20px 0 0 0;
         }
       }
@@ -54,11 +53,10 @@
       color: $primary;
       text-align: center;
       margin: 0;
-      font-size: 2rem;
     }
 
     .swiper-social-proof {
-      height: 180px;
+      height: 150px;
       margin-top: 40px;
       overflow: hidden;
 
@@ -106,13 +104,11 @@
 
       h4 {
         margin: 0;
-        font-size: 1.4rem;
         color: $primary;
-        letter-spacing: .8px;
       }
 
       h3 {
-        font-size: 3.1rem;
+        font-size: 2rem;
         margin: 20px 0 0 0;
       }
 
@@ -159,7 +155,7 @@
       }
   
       h2 {
-        font-size: 25rem;
+        font-size: 20rem;
         letter-spacing: 20px;
         margin: 0;
         z-index: 1;
@@ -190,20 +186,17 @@
           text-align: center;
           width: 130px;
           padding: 10px 0;
-          font-size: 1.7rem;
           letter-spacing: .5px;
           margin: 0;
           color: $primary;
         }
   
         h1 {
-          font-size: 8rem;
-          margin: 0;
-          letter-spacing: 3px;
+          font-size: 5rem;
+          margin: 15px 0 0 0;
         }
   
         p {
-          font-size: 1.2rem;
           margin: 10px 0;
         }
   
@@ -215,12 +208,12 @@
             text-decoration: none;
             background: #FF731E;
             padding: 15px 30px;
-            font-size: 1.1rem;
+            font-size: .8rem;
             transition: .3s;
-            letter-spacing: 1px;
+            text-transform: uppercase;
           
             &:hover {
-              background: darken(#FF731E, 15%);
+              background: $turqoise;
             }
           }
         }
@@ -230,7 +223,7 @@
 
   #hcc-customer-images {
     display: grid;
-    grid-template-columns: auto 55%;
+    grid-template-columns: auto 60%;
 
     #hcc-customer-images-text-container {
       display: flex;
@@ -246,8 +239,10 @@
         }
 
         h1 {
-          font-size: 7rem;
+          font-size: 6.5rem;
           line-height: .9;
+          text-transform: uppercase;
+          font-family: 'League Gothic', sans-serif;
           margin: 0;
 
           span {
@@ -256,7 +251,7 @@
         }
         
         h2 {
-          font-size: 3.5rem;
+          font-size: 2.5rem;
           line-height: 1;
           text-transform: none;
 
@@ -269,8 +264,8 @@
 
     #hcc-customer-images-container {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 250px 250px 125px 250px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 250px);
 
       img {
         object-fit: cover;
@@ -288,7 +283,7 @@
 
         &:nth-child(2) {
           grid-column: 3;
-          grid-row: 1 / span 3;
+          grid-row: 1 / span 2;
           @include dimension;
         }
 
@@ -306,15 +301,16 @@
 
         &:nth-child(5) {
           grid-column: 1 / span 2;
-          grid-row: 3 / span 2;
-          @include dimension;
+          grid-row: span 3;
+          width: 100%;
+          height: 324px;
+          object-position: 50% 30%;
         }
 
         &:nth-child(6) {
           grid-column: 3;
-          grid-row: 4;
+          grid-row: span 3;
           @include dimension;
-          background: pink;
         }
       }
     }
@@ -332,6 +328,9 @@
         margin-left: 30px;
         width: 40%;
 
+        #hcc-hero-content-wrapper h1 {
+          font-size: 2.4rem;
+        }
       }
 
       img {
@@ -401,6 +400,10 @@
         margin-left: 0;
         box-sizing: border-box;
         padding: 50px;
+
+        #hcc-hero-content-wrapper h1 {
+          font-size: 2rem;
+        }
       }
 
       img {

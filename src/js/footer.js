@@ -1,5 +1,5 @@
 window.initMap = function initMap() {
-  const coordinate = { lat: 2.2576055092316714, lng: 102.2331881675083 };
+  const coordinate = { lat: 1.4872285042594668, lng: 103.39238458307112 };
   const map = new google.maps.Map(document.getElementById('hcc-map'), {
     zoom: 15,
     center: coordinate

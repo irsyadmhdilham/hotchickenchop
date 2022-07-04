@@ -42,20 +42,17 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-  font-family: 'Bebas Neue', cursive;
-  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @for $x from 2 through 6 {
   h#{$x} {
-    font-family: 'Bebas Neue', cursive;
-    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
   }
 }
 
 a {
-  font-family: 'Bebas Neue', cursive;
-  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Grouping content
@@ -131,7 +128,7 @@ samp {
 
 small {
   font-size: 80%;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Montserrat', sans-serif;
   color: $secondary;
 }
 
@@ -370,10 +367,11 @@ template {
   color: white;
   text-decoration: none;
   background: $primary;
-  padding: 15px 30px;
-  font-size: 1.1rem;
+  padding: 15px 20px;
+  font-size: .8rem;
   transition: .3s;
   letter-spacing: 1px;
+  text-transform: uppercase;
 
   &:hover {
     background: $turqoise;
@@ -382,10 +380,10 @@ template {
 
 p {
   line-height: 1.6;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Montserrat', sans-serif;
   color: $secondary;
 }
 
 input, optgroup, select, textarea {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Montserrat', sans-serif;
 }

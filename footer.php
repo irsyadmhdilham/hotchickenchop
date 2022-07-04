@@ -33,11 +33,11 @@
         <div id="hcc-footer-contact-address-icon">
           <?php include 'src/img/location.svg'; ?>
         </div>
-        <p id="hcc-footer-contact-address">No 23,Jalan Ttc 26A,Taman Teknologi Cheng, 75260, Cheng, Melaka</p>
+        <p id="hcc-footer-contact-address">No 17,Jalan T25,Taman Teknologi Cheng, 75260, Cheng, Melaka</p>
         <div id="hcc-footer-contact-phone-icon">
           <?php include 'src/img/phone.svg'; ?>
         </div>
-        <p id="hcc-footer-contact-phone">014-2666241</p>
+        <p id="hcc-footer-contact-phone">019-7928834</p>
       </div>
   
       <div id="hcc-footer-social-links">

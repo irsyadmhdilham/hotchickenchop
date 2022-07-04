@@ -141,8 +141,8 @@ if (isContactPage) {
 
 window.initMap = function initMap() {
   var coordinate = {
-    lat: 2.2576055092316714,
-    lng: 102.2331881675083
+    lat: 1.4872285042594668,
+    lng: 103.39238458307112
   };
   var map = new google.maps.Map(document.getElementById('hcc-map'), {
     zoom: 15,
@@ -232,7 +232,7 @@ var swiperSocialProof = new Swiper('.swiper-social-proof', {
       spaceBetween: 70
     },
     1200: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 100
     }
   }

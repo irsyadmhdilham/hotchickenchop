@@ -11,7 +11,7 @@ const prod = process.env.NODE_ENV == 'production';
 gulp.task('serve', function() {
   browserSync.init({
     proxy: 'http://localhost:8888/wordpress',
-    port: 8010,
+    port: 8020,
     open: true
   });
   gulp.watch('src/scss/**/*.scss', gulp.series('style'));
