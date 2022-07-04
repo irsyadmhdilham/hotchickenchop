@@ -46,6 +46,6 @@ gulp.task('js-watch', gulp.series('js', function(done) {
   done();
 }));
 
-const tasks = ['style', 'js', 'serve'];
+const tasks = prod ? ['style', 'js'] : ['style', 'js', 'serve'];
 
 gulp.task('default', gulp.series(...tasks));

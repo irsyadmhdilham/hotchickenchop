@@ -11,7 +11,7 @@
 <nav id="hcc-header" <?php if (is_front_page()){ echo 'class="hcc-nav-front-page"'; } ?>>
 
   <div id="hcc-logo-container">
-    <?php include 'src/img/logo.svg' ?>
+    <img src="<?php echo get_template_directory_uri() . '/src/img/logo.svg'; ?>" alt="logo">
   </div>
 
   <?php wp_nav_menu(array(
@@ -23,7 +23,7 @@
 <div id="hcc-header-mobile" <?php if (is_front_page()){ echo 'class="hcc-nav-front-page-mobile"'; } ?>>
 
   <div id="hcc-logo-container">
-    <?php include 'src/img/logo.svg' ?>
+    <img src="<?php echo get_template_directory_uri() . '/src/img/logo.svg'; ?>" alt="logo">
   </div>
 
   <div id="hcc-menu-hamburger">

@@ -4,7 +4,8 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "dev": "rm -rf style.css main.js && cross-env NODE_ENV=development gulp"
+    "dev": "rm -rf style.css main.js && cross-env NODE_ENV=development gulp",
+    "prod": "rm -rf style.css main.js && cross-env NODE_ENV=production gulp"
   },
   "keywords": [],
   "author": "",
